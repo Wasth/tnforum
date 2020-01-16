@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta property="og:site_name" content="Форумы ПАО Татнефть" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name =«title» content="Форумы ПАО Татнефть">
+	<title> Форумы ПАО "Татнефть"</title>
+	<meta name="Description" content="Форумы ПАО Татнефть">
+	<meta name="keywords" content="форум, международный форум, татнефть, наука, инновации, молодежь, студенты, альметьевск, нефтегазовый">
+	
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="sweetalert.css">
+	
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />-->
+    <link rel="stylesheet" href="baguetteBox.css">
+	<link rel="stylesheet" href="grid-gallery.css">
+	<link rel="stylesheet" href="slider.css">
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body>
+	
+	<nav class="w-100 position-fixed navbar navbar-expand-lg bg-black text-white">
+		<a class="navbar-brand d-block d-lg-none" href="#"><img src="img/tn_logo2.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <i class='fa fa-navicon text-white'></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mx-auto">
+		    	<li class="nav-item d-none d-lg-block">
+		        	<a class="nav-link mt-0" href="#"><img src="img/tn_logo2.png"></a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">О форуме</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">Фотогалерея</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">Спикеры</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">Расписание</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">Регистрация</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">Стоимость</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#">Спонсоры</a>
+		    	</li>
+		    </ul>
+	    </div> 
+	</nav>
+	<!-- header start -->
+	<!-- <div class="header-menu">
+		<div class="bg-black">
+			<div class="nav-menu">
+				<a href="#" class="mg-b-1 main-logo"><img src="img/tn_logo2.png"></a>
+				<a href="#about" class="">О форуме</a>
+				<a href="#photo" class="">Фотогалерея</a>
+				<a href="#speakers" class="">Спикеры</a>
+				<a href="#3" class="">Расписание</a>
+				<a href="#4" class="">Регистрация</a>
+				<a href="#5" class="">Стоимость</a>
+				<a href="#sponsors" class="">Спонсоры</a>
+			</div>
+		</div>
+	</div> -->
+	<!-- header end -->
+
+	<!-- go to home start -->
+	<div class="arround-up"><a href="#"><i class="fa fa-chevron-circle-up fa-3x" style="color: rgba(108, 117, 125, 0.5);"></i></a></div>
+	<!-- go to home end -->
+
+	<!-- wrapper start -->
+	<div class="wrapper">
+
+		<!-- block-start start -->
+		<div class="block block-start">
+			<div class="container pd-t-1">
+				<!--<div class="nav-logo">
+					<a class="" href="#"><img src="img/tn_logo.png"></a>
+				</div>-->
+				<div class="fl-center text-center text-white">
+					<div class="promo-text text-light">II Международный форум</div>
+					<div class="promo-text-big"><strong>"НАУКА и ИННОВАЦИИ"</strong></div>
+					<div class="text-body pd-t-1 pd-b-3 text-white">16-18 октября 2019, Республика Татарстан, г. Альметьевск</div>
+					<div class="">
+						<div class="text-mini">До конца регистрации осталось:</div>
+						<ul class="fl-group fl-wrap content-center items-center">
+							<li><span id="days" class="text-bold"></span><div class="text-micro">дней</div></li>
+						    <li><span id="hours" class="text-bold"></span><div class="text-micro">часов</div></li>
+						    <li><span id="minutes" class="text-bold"></span><div class="text-micro">минут</div></li>
+						    <li><span id="seconds" class="text-bold"></span><div class="text-micro">секунд</div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- block-start end -->
+
+		<!-- block-info start -->
+		<div id="about" class="anchor"></div>
+		<div class="block-info">
+			<div class="container pd-tb-15">
+				<div class="fl-group fl-wrap content-around items-center">
+					<div class="pd-tb-15"><div class="number text-dark text-light pd-b-1">25</div><div class="text-body text-center text-bold">Площадок</div></div>
+					<div class="pd-tb-15"><div class="number text-dark text-light pd-b-1">30</div><div class="text-body text-center text-bold">Спикеров</div></div>
+					<div class="pd-tb-15"><div class="number text-dark text-light pd-b-1">3000</div><div class="text-body text-center text-bold">Участников</div></div>
+				</div>
+			</div>
+		</div>
+		<!-- block-info end -->
+
+		<!-- block-hello start -->
+		<div class="block-section bg-light">
+			<div class="container pd-tb-2">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pt-0">
+						<p class="text-hello text-grey text-italic">Организация Международного форума «Наука и Инновации» для компании «Татнефть»
+						и Альметьевского государственного нефтяного института становится доброй традицией.  <br><br>
+						Инновационные технологии активно внедряются во все сферы нашей жизни. Использование достижений науки и технического прогресса
+						в производстве является гарантом развития и обеспечения конкурентоспособности как экономики в целом, 
+						так и топливно-энергетического и минерально-сырьевого комплексов. 
+						Миру нужны энергичные, активные, нестандартно мыслящие исследователи, умеющие генерировать прорывные идеи,
+						находить оптимальные решения актуальных задач и бизнес-вызовов отрасли. <br><br>
+						Уверен, научный и технологический потенциал участников Форума, обмен опытом и практическими рекомендациями, 
+						использование инструмента открытых инноваций будут способствовать качественно новому взаимодействию образования, науки и промышленности. 
+						<br><br>
+						Желаю всем плодотворной работы,  интересных встреч и успехов во всем! </p>
+						<p class="">Генеральный директор<br> Компании "Татнефть"<br></p>
+						<p class="text-bold">Наиль Маганов</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-0">
+						<div class="pd-lr-1" style="text-align: center;">
+							<img src="img/gd.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- block-hello end -->
+		
+		<div>
+			<h1 class="my-5 text-center">
+				Новости
+			</h1>
+			<div class="container">
+				<div id='news' class="slider">
+				    <div class="slider__wrapper">
+						<div class="slider__item">
+							<div style="">
+								<img class='news-img' src="img/news.jpg" alt="news">
+								<h5 class="card-title">Title of news</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iure! Illo hic est tempore similique, temporibus quibusdam repellendus dolore eos cumque voluptate saepe quo, neque perferendis nihil odit porro libero.
+								</p>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<div style="">
+								<img class='news-img' src="img/news2.jpg" alt="news">
+								<h5 class="card-title">Title of news</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iure! Illo hic est tempore similique, temporibus quibusdam repellendus dolore eos cumque voluptate saepe quo, neque perferendis nihil odit porro libero.
+								</p>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<div style="">
+								<img class='news-img' src="img/news3.jpg" alt="news">
+								<h5 class="card-title">Title of news</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iure! Illo hic est tempore similique, temporibus quibusdam repellendus dolore eos cumque voluptate saepe quo, neque perferendis nihil odit porro libero.
+								</p>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<div style="">
+								<img class='news-img' src="img/news4.jpg" alt="news">
+								<h5 class="card-title">Title of news</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iure! Illo hic est tempore similique, temporibus quibusdam repellendus dolore eos cumque voluptate saepe quo, neque perferendis nihil odit porro libero.
+								</p>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<div style="">
+								<img class='news-img' src="img/news5.jpg" alt="news">
+								<h5 class="card-title">Title of news</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iure! Illo hic est tempore similique, temporibus quibusdam repellendus dolore eos cumque voluptate saepe quo, neque perferendis nihil odit porro libero.
+								</p>
+							</div>
+						</div>
+
+				    </div>
+				    <a class="slider__control slider__control_left" href="#" role="button"></a>
+				    <a class="slider__control slider__control_right" href="#" role="button"></a>
+			  </div>
+			</div>
+		</div>
+
+		<!-- block-gallery start -->
+		<div id="photo" class="anchor"></div>
+		<section class="gallery-block grid-gallery">
+            <div class="container">
+                <div class="text-title text-center">Фотогалерея</div>
+                <!-- <div class="row">
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/1.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/1.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/2.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/2.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/3.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/3.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/4.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/4.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/5.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/5.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/6.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/6.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/7.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="img/8.jpg">
+                            <img class="img-fluid image scale-on-hover" src="img/8.jpg">
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        
+		<div class="">
+			<div class="">
+				<div class="fl-group fl-wrap content-center items-center">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/1.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/2.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/3.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/4.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/5.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/6.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
+						<div class="card">
+							<img class="card-img-top" src="img/7.jpg">
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 position-relative" style="padding: 0;">
+						<div class="card">
+							<a class='text-white' href="">
+								<div class='d-flex flex-column content-center align-items-center position-absolute w-100 h-100' style='background-color: rgba(0,0,0,0.8)'>
+									<i class="fa fa-camera fa-4x"></i>
+									<h3>Все фото</h3>
+								</div>
+								<img class="card-img-top" src="img/8.jpg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- block-gallery end -->
+
+		<!-- block-speakers start -->
+		<div class="block-section bg-light">
+			<div id="2" class="anchor"></div>
+			<div class="container">
+				<div class="text-title text-center">Спикеры</div>
+				<div id='speakersSlider' class="slider">
+				    <div class="slider__wrapper">
+						<div class="slider__item">
+							<div class="card">
+							<img class="card-img-top" src="img/face1.jpg">
+							<div class="card-body bg-grey-light text-center">
+								<h5 class="card-title">Светлана<br>Иванова</h5>
+								<p class="card-text text-grey">Россия</p>
+							</div>
+						</div>
+						</div>
+
+						<div class="slider__item">
+							<div class="card">
+							<img class="card-img-top" src="img/face2.jpg">
+							<div class="card-body bg-grey-light text-center">
+								<h5 class="card-title">Иван<br>Иванов</h5>
+								<p class="card-text text-grey">Россия</p>
+							</div>
+						</div>
+						</div>
+
+						<div class="slider__item">
+							<div class="card">
+							<img class="card-img-top" src="img/face2.jpg">
+							<div class="card-body bg-grey-light text-center">
+								<h5 class="card-title">Иван<br>Иванов</h5>
+								<p class="card-text text-grey">Россия</p>
+							</div>
+						</div>
+						</div>
+
+						<div class="slider__item">
+							<div class="card">
+							<img class="card-img-top" src="img/face1.jpg">
+							<div class="card-body bg-grey-light text-center">
+								<h5 class="card-title">Светлана<br>Иванова</h5>
+								<p class="card-text text-grey">Россия</p>
+							</div>
+						</div>
+						</div>
+
+				    </div>
+				    <a class="slider__control slider__control_left" href="#" role="button"></a>
+				    <a class="slider__control slider__control_right" href="#" role="button"></a>
+			  </div>
+			</div>
+		</div>
+		<!-- block-speakers end -->
+
+		<!-- block-schedule start -->
+		<div class="block-section">
+			<div id="3" class="anchor"></div>
+			<div class="container">
+				<div class="text-title text-center">Расписание</div>
+				<div class="text-bold text-white text-center">
+					<a href="schedule.pdf" target="_blank">
+						<button class="btn bg-grey text-white text-bold text-uppercase" style="border-radius: 40px; width: 250px; height: 63px;">Скачать расписание</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- block-schedule end -->
+
+		<!-- block-register start -->
+		<div class="block-section bg-dark">
+			<div id="4" class="anchor"></div>
+			<div class="text-title text-center text-white">Регистрация</div>
+			<h5 class="text-center text-white text-light pd-b-2">Для участия в форуме докладчиком нажмите кнопку "Я Докладчик".
+			<br>
+			Для участия в форме слушателя - "Я слушатель".
+			</h5>
+			<div class="container">
+				<div class="fl-group fl-wrap content-around items-center">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pd-b-1 text-center">
+						<a href="http://conference.agni-rt.ru/science_&_innovations/" target="_blank">
+							<button class="btn btn-lg bg-tn_green text-white text-bold text-uppercase" style="border-radius: 40px; width: 250px; height: 63px;">Я докладчик</button>
+						</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-0 text-center">
+						<button id="myBtn-3" class="myBtn2 btn btn-lg bg-red text-white text-bold text-uppercase" style="border-radius: 40px; width: 250px; height: 63px;">Я слушатель</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- block-register end -->
+
+		<!-- block-cost start -->
+		<div class="block-section">
+			<div id="5" class="anchor"></div>
+			<div class="container">
+				<div class="text-title text-center">Стоимость</div>
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<div class="text-body mb-0">
+								<div class="wd-100p pd-tb-05" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Бесплатное участие
+								</div>
+							</div>
+						</div>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body line-hi-15">
+								• Для участника, спикера, эксперта и модератора, заявленного в данном мероприятии деловой программы Форума;
+								<br>• Для слушателя – сотрудников Группы «Татнефть», студентов и преподавателей ГБОУ ВО АГНИ, зарегистрированных в мероприятии деловой программы Форума.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<div class="text-body mb-0">
+								<div class="wd-100p pd-tb-05" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									Пакет "Генеральный спонсор"
+								</div>
+							</div>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body line-hi-15">
+								Стоимость пакета – 600 000 рублей
+								<br>Включает:
+								<br>•	Упоминание о Генеральном Спонсоре в пресс-релизе мероприятия;
+								<br>•	Вложение рекламных материалов Спонсора в информационные пакеты для прессы и участников (материалы предоставляются Партнером);
+								<br>•	Размещение логотипа на информационных стойках: - в зоне регистрации посетителей на Форум;
+								<br>•	Размещение рекламных конструкций (роллаппов) в зоне регистрации участников деловых секций (роллаппы предоставляются Партнером);
+								<br>•	Возможность выступить с докладом или презентацией на площадке Форума (тема выступления, дата и время выступления и продолжительность выступления согласовывается с организатором);
+								<br>•	Возможность выступить в качестве спикера на основных мероприятиях Форума (по согласованию с Оргкомитетом Форума);
+								<br>•	Вручение сертификата «Генеральный партнёр Форума» в ходе проведения Пленарного заседания;
+								<br>•	Размещение логотипа Спонсора на экранной заставке во время проведения Пленарного заседания;
+								<br>•	Предоставление выставочной площади для размещения стенда компании Генерального спонсора;
+								<br>•	Содействие в организации двусторонних встреч и предоставление помещения для проведения переговоров в рамках Форума;
+								<br>•	Предоставление Партнеру пригласительных на В2В встречи по случаю открытия Форума на 3 лица;
+								<br>•	Регистрация 3 (трех) представителей компании Генерального спонсора в качестве участников Форума с предоставлением доступа на все официальные мероприятия в рамках мероприятия;
+								<br>•	Размещение логотипа компании Генерального Спонсора на всей полиграфической продукции мероприятия;
+								<br>•	Предоставление Спонсору сборника материалов Форума 5 шт.;
+								<br>•	Предоставление Спонсору 5 комплектов раздаточных материалов участника Форума.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<div class="text-body mb-0">
+								<div class="wd-100p pd-tb-05" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									Пакет "Официальный спонсор"
+								</div>
+							</div>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body line-hi-15">
+								Стоимость пакета – 300 000 рублей
+								<br>Включает:
+								<br>•	Упоминание названия компании Официального спонсора с указанием статуса в пресс–релизах;
+								<br>•	Возможность выступления представителей Официального спонсора на тематических круглых столах в рамках Форума (тема выступления, дата и время выступления и продолжительность выступления согласовывается с организатором);
+								<br>•	Возможность выступить в качестве спикера на основных мероприятиях Форума (по согласованию с Оргкомитетом Форума);
+								<br>•	Предоставление Спонсору сборника материалов Форума 5 шт.;
+								<br>•	Регистрация 2 (двух) представителей компании Официального спонсора в качестве участников Форума с предоставлением доступа на все официальные мероприятия в рамках Форума;
+								<br>•	Предоставление выставочной площади для размещения стенда компании Официального спонсора;
+								<br>•	Размещение логотипа Спонсора на экранной заставке во время проведения Пленарного заседания;
+								<br>•	Размещение логотипа компании Официального спонсора на всей полиграфической продукции мероприятия;
+								<br>•	Предоставление Спонсору 2 комплектов раздаточных материалов участника Форума.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingFour">
+							<div class="text-body mb-0">
+								<div class="wd-100p pd-tb-05" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+									Пакет "Партнер"
+								</div>
+							</div>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+							<div class="card-body line-hi-15">
+								Стоимость пакета – 200 000 рублей
+								<br>Включает:
+								<br>•	Регистрация 1 (одного) представителя компании Партнера в качестве участника Форума с предоставлением доступа на все официальные мероприятия в рамках мероприятия;
+								<br>•
+								<br>•	Возможность выступления представителя Партнера на тематических круглых столах в рамках Форума (тема выступления, дата и время выступления и продолжительность выступления согласовывается с организатором);
+								<br>•	Размещение логотипа Партнера на экранной заставке во время проведения Пленарного заседания;
+								<br>•	Размещение логотипа компании Партнера на всей полиграфической продукции мероприятия;
+								<br>•	Комплект раздаточных материалов участника Форума.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- block-sponsors start -->
+		<div id="sponsors" class="anchor"></div>
+		<div class="block-section bg-light">
+			<div class="text-title text-center">Спонсоры</div>
+			<div class="container pd-tb-15">
+				<div id='sponsorsSlider' class="slider">
+				    <div class="slider__wrapper">
+
+						<div class="slider__item">
+							<div class="text-center">
+								<img class='spons-img' src="img/spon1.png" alt="news">
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<div class='text-center'>
+								<img class='spons-img' src="img/spon2.png" alt="news">
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<div class="text-center">
+								<img class='spons-img' src="img/spon3.png" alt="news">
+							</div>
+						</div>
+
+				    </div>
+				    <a class="slider__control slider__control_left" href="#" role="button"></a>
+				    <a class="slider__control slider__control_right" href="#" role="button"></a>
+			    </div>
+			</div>
+		</div>
+		<!-- block-sponsors end -->
+
+		<!-- block-footer start -->
+		<div class="">
+				<!-- <div class="row">
+					<div class='col-12 col-md-7'>
+						
+					</div>	
+					<div class='col-12 contact-links col-md-5 d-flex flex-column align-items-center justify-content-center'>
+						<h1 class='mb-5'>Контакты</h1>
+						<a class='mb-3 text-white' href="https://www.tatneft.ru">
+							<i class="fa fa-globe"></i> Официальный сайт
+						</a>
+						<a class='mb-3 text-white' href="https://vk.com">
+							<i class="fa fa-vk"></i> Группа vk.com
+						</a>
+						<a class='mb-3 text-white' href="https://www.instagram.com/tatneft_official/">
+							<i class="fa fa-instagram"></i> Instagram
+						</a>
+						<a class='mb-3 text-white' href="mailto:tn@tn.tn">
+							<i class="fa fa-envelope"></i> tn@tn.tn
+						</a>		
+					</div>	
+				</div> -->
+			<h1 class='my-5 text-center'>Контакты</h1>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69b23ff36bf4ae84d2b5650578666ee0399b7c222af409315c097240de2ca9d8&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=false"></script>
+		</div>
+		<!-- block-footer end -->
+
+	</div>
+	<!-- wrapper end -->
+	
+	<!-- footer -->
+	<div class='bg-black text-center py-5'>
+		<a class='mx-3 text-white' href="https://www.tatneft.ru">
+			<i class="fa fa-globe fa-2x"></i>
+		</a>
+		<a class='mx-3 text-white' href="https://vk.com">
+			<i class="fa fa-vk fa-2x"></i>
+		</a>
+		<a class='mx-3 text-white' href="https://www.instagram.com/tatneft_official/">
+			<i class="fa fa-instagram fa-2x"></i>
+		</a>
+		<a class='mx-3 text-white' href="mailto:tn@tn.tn">
+			<i class="fa fa-envelope fa-2x"></i>
+		</a>
+		<p class='text-secondary mt-4'>ПАО "Татнефть" © 2020</p>
+	</div>
+	<!-- footer end -->
+
+	<!-- modal start -->
+	<div id="myModal" class="modal">
+		<div class="modal-content" style="width: 330px;">
+			<div class="modal-header">
+				<div class="text-mini pd-t-025 text-center text-bold">Заполните поля</div>
+				<span class="close">&times;</span>
+			</div>
+			<div class="modal-body">
+				<div class="input-group pd-tb-05">
+					<input type="text" id="first_name" class="wd-100p round-025" placeholder=" Ваше имя...">
+				</div>
+				<div class="input-group pd-b-05">
+					<input type="text" id="email" class="wd-100p round-025" placeholder=" Ваш e-mail...">
+				</div>
+				<div class="input-group pd-b-05">
+					<input type="text" id="phone" class="wd-100p round-025" placeholder=" Ваш телефон...">
+				</div>
+				<div class="input-group pd-b-05">
+					<textarea rows="1" id="company" class="wd-100p round-025" placeholder="Ваша компания..."></textarea>
+				</div>
+				<div class="input-group pd-b-05">
+					<textarea rows="1" id="position" class="wd-100p round-025" placeholder="Ваша должность..."></textarea>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="invitation">
+					<label class="form-check-label" for="invitation">Прошу прислать официальное приглашение</label>
+				</div>
+				<div class="input-group pd-b-05">
+					<div class="g-recaptcha" data-sitekey="6LcVs7YUAAAAADDsvokoIC-CfJXIBhNiA3IDnhbA"></div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="myBtn" type="submit" class="btn bg-grey text-white text-bold text-uppercase" style="border-radius: 40px;" onclick="yaCounter47183637.reachGoal('form_send_button'); return true;">Отправить</button>
+			</div>
+		</div>
+	</div>
+	<!-- modal end -->
+
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<script src="jquery.countdown.min.js"></script>
+	<script src="jquery.countdown-ru.js"></script>
+	<script src="jquery.countdown.script.js"></script>
+	<script src="sweetalert.min.js"></script>
+
+	<script  src="script.js"></script>
+
+	<script>
+		var modal = document.getElementById('myModal');
+		var myBtn = document.getElementsByClassName('myBtn');
+		var close = document.getElementsByClassName('close')[0];
+
+		for (var i = 0; i < myBtn.length; i++) {
+			myBtn[i].addEventListener('click', function() {
+				$('#message').val('');
+				openModalWindow();
+			})
+		}
+		close.addEventListener('click', function() {closeModalWindow();})
+
+		function openModalWindow() {
+			modal.style.display = "block";
+			$('#first_name').focus();
+		}
+
+		function closeModalWindow() {modal.style.display = "none";}
+
+		$('#myBtn-3').on('click', function() {
+			var first_name = $('#first_name').val();
+			var email = $('#email2').val();
+			var phone = $('#phone2').val();
+			var city  = $('#city2').val();
+			var company = '';
+			var position = '';
+
+			$('#email').val(email);
+			$('#phone').val(phone);
+			$('#city').val(city);
+			$('#company').val(company);
+			$('#position').val(position);
+
+			openModalWindow();
+
+
+			// var all_fields_fill = true;
+			// if(email.trim() == '') all_fields_fill = false;
+			// if(phone.trim() == '') all_fields_fill = false;
+			// if(city.trim() == '') all_fields_fill = false;
+
+			// if(all_fields_fill) {
+			// 	$.ajax({
+	  //               url: 'post.php',
+	  //               data: {email: email, phone: phone, city: city, message: 'Презентация', first_name: '', },
+	  //               type: "post",
+	  //               dataType: "json"
+	  //           }).done( function(e) {
+	  //               if(e == 1) {
+	  //                   alertify.alert('Спасибо.', 'Ваше сообщение отправлено.');
+	  //                   $('#email2').val('');
+	  //                   $('#phone2').val('');
+	  //                   $('#city2').val('');
+	  //               } else {
+	  //                   alertify.alert('Ошибка.', 'Произошла ошибка, сообщение не может быть отправлено.');
+	  //               }
+	  //           });
+			// } else {
+			// 	swal('Все поля должны быть заполнены');
+			// }
+		});
+
+		$('#myBtn').on('click', function(e) {
+			var fills = true;
+
+			var first_name = $('#first_name').val();
+			var email = $('#email').val();
+			var phone = $('#phone').val();
+			var company = $('#company').val();
+			var position = $('#position').val();
+			var invitation = $('#invitation').prop('checked');
+
+			if(first_name.trim() == '') fills = false;
+			if(email.trim() == '') fills = false;
+			if(phone.trim() == '') fills = false;
+			if(company.trim() == '') fills = false;
+			if(position.trim() == '') fills = false;
+
+			invitation = invitation == true ? "Прислать приглашение" : "Нет";
+
+			if(grecaptcha.getResponse() == '') fills = false;
+
+			if(fills) {
+				$.ajax({
+                    url: 'post.php',
+                    data: {first_name: first_name, email: email, phone: phone, company: company, position: position, invitation: invitation,  'g-recaptcha-response': grecaptcha.getResponse()},
+                    type: "post",
+                    dataType: "json"
+                }).done( function(e) {
+                    if(e.status == 1) {
+                    	closeModalWindow();
+                        swal('Спасибо! Ваше сообщение отправлено!');
+                        $('#first_name').val('');
+                        $('#email').val('');
+            			$('#phone').val('');
+            			$('#city').val('');
+            			$('#company').val('');
+            			$('#position').val('');
+            			$('#invitation').prop('checked', false);
+                    } else {
+                        closeModalWindow();
+                        swal(e.message);
+                    }
+                });
+			} else {
+				swal('Должны быть заполнены все поля');
+			}
+		});
+	</script>
+	
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>-->
+	<script src="baguetteBox.js"></script>
+    <script>
+        baguetteBox.run('.grid-gallery', { animation: 'slideIn'});
+    </script>
+	<script src='slider.js'></script>
+</body>
+</html>

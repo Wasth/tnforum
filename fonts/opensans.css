@@ -1,0 +1,11 @@
+/*****************************
+ All rights reserved.
+ AllFont.ru (c) 2011-2015
+ *****************************/
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Light'),
+        url(OpenSans-Light.ttf) format('truetype');
+}
