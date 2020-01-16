@@ -36,7 +36,7 @@ var multiItemSlider = (function () {
       _html = _mainElement.innerHTML,
       _states = [
         { active: false, minWidth: 0, count: 1 },
-        { active: false, minWidth: 980, count: 2 }
+        // { active: false, minWidth: 980, count: 2 }
       ],
       _config = {
         isCycling: false, // автоматическая смена слайдов
@@ -246,6 +246,5 @@ multiItemSlider('#sponsorsSlider', {
 
 multiItemSlider('#speakersSlider', {
   isCycling: true
-})
-
+});
   
