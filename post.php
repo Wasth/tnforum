@@ -8,7 +8,7 @@ $company = $_POST["company"];
 $position = $_POST["position"];
 $invitation = $_POST["invitation"];
 $capcha = $_POST["g-recaptcha-response"];
-$secret = "6LcVs7YUAAAAAM9t0iQihHtiaAnOBIdipt3AB9Vf";
+$secret = "";
 
 function httpPost($url, $data)
 {
