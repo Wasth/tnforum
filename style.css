@@ -655,10 +655,10 @@ nav.navbar {
 }
 nav.navbar a.nav-link {
   color: white;
-  margin-top: 7px;
+  margin-top: 9px;
 }
 nav.navbar li {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .news-img {

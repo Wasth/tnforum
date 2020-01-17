@@ -43,28 +43,34 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mx-auto">
 		    	<li class="nav-item d-none d-lg-block">
-		        	<a class="nav-link mt-0" href="#"><img src="img/tn_logo2.png"></a>
+		        	<a class="nav-link mt-0" href="/"><img src="img/tn_logo2.png"></a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">О форуме</a>
+		        	<a class="nav-link" href="#b1">О форуме</a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">Фотогалерея</a>
+		        	<a class="nav-link" href="#b2">Новости</a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">Спикеры</a>
+		        	<a class="nav-link" href="#b3">Фотогалерея</a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">Расписание</a>
+		        	<a class="nav-link" href="#b4">Спикеры</a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">Регистрация</a>
+		        	<a class="nav-link" href="#b5">Расписание</a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">Стоимость</a>
+		        	<a class="nav-link" href="#b6">Стоимость</a>
 		    	</li>
 		    	<li class="nav-item">
-		        	<a class="nav-link" href="#">Спонсоры</a>
+		        	<a class="nav-link" href="#b7">Спонсоры</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#b8">Контакты</a>
+		    	</li>
+		    	<li class="nav-item">
+		        	<button class="btn mt-1 bg-green text-white text-uppercase reg-button" role='button'>Регистрация</button>
 		    	</li>
 		    </ul>
 	    </div> 
@@ -135,7 +141,7 @@
 			<div class="container pd-tb-2">
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pt-0">
-						<p class="text-hello text-grey text-italic">Организация Международного форума «Наука и Инновации» для компании «Татнефть»
+						<p id="b1" class="text-hello text-grey text-italic">Организация Международного форума «Наука и Инновации» для компании «Татнефть»
 						и Альметьевского государственного нефтяного института становится доброй традицией.  <br><br>
 						Инновационные технологии активно внедряются во все сферы нашей жизни. Использование достижений науки и технического прогресса
 						в производстве является гарантом развития и обеспечения конкурентоспособности как экономики в целом, 
@@ -275,10 +281,10 @@
         
 		<div class="">
 			<div class="">
-				<div class="fl-group fl-wrap content-center items-center">
+				<div class="fl-group fl-wrap content-center items-center grid-gallery">
 					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
 						<div class="card">
-							<img class="card-img-top" src="img/1.jpg">
+							<a href="img/1.jpg"><img class="card-img-top" src="img/1.jpg"></a>
 						</div>
 					</div>
 					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3" style="padding: 0;">
@@ -417,27 +423,10 @@
 		<!-- block-schedule end -->
 
 		<!-- block-register start -->
-		<div class="block-section bg-dark">
+		<div class="block-section bg-dark text-center">
 			<div id="4" class="anchor"></div>
-			<div class="text-title text-center text-white">Регистрация</div>
-			<h5 class="text-center text-white text-light pd-b-2">Для участия в форуме докладчиком нажмите кнопку "Я Докладчик".
-			<br>
-			Для участия в форме слушателя - "Я слушатель".
-			</h5>
-			<div class="container">
-				<div class="fl-group fl-wrap content-around items-center">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pd-b-1 text-center">
-						<a href="http://conference.agni-rt.ru/science_&_innovations/" target="_blank">
-							<button class="btn btn-lg bg-tn_green text-white text-bold text-uppercase" style="border-radius: 40px; width: 250px; height: 63px;">Я докладчик</button>
-						</a>
-					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-0 text-center">
-						<button id="myBtn-3" class="myBtn2 btn btn-lg bg-red text-white text-bold text-uppercase" style="border-radius: 40px; width: 250px; height: 63px;">Я слушатель</button>
-					</div>
-				</div>
-			</div>
-			</div>
+			<h1 class='text-white mb-3'>Хотите принять участие?</h1>
+			<button id="myBtn-3" class="myBtn2 btn btn-lg bg-green text-white text-bold text-uppercase reg-button" style="border-radius: 40px; height: 63px;">Зарегистрироваться в форуме</button>
 		</div>
 		<!-- block-register end -->
 
@@ -692,7 +681,7 @@
 
 		function closeModalWindow() {modal.style.display = "none";}
 
-		$('#myBtn-3').on('click', function() {
+		$('.reg-button').on('click', function() {
 			var first_name = $('#first_name').val();
 			var email = $('#email2').val();
 			var phone = $('#phone2').val();

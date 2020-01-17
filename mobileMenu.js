@@ -1,4 +1,4 @@
-    $('.menu .button').click(function () {
+        $('.menu .button').click(function () {
         var hasShowed = false;
         for(var i = 0;i < $('.lvl').length;i++){
             if($('.lvl:eq('+i+')').css('left') == '0px'){
