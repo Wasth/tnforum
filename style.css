@@ -325,7 +325,7 @@ and (max-width: 499px) {
 @media only screen
 and (max-width: 599px) {
   .main-logo {display: none;}
-  .wrapper {padding-top: 4rem;}
+  .wrapper {padding-top: 2.7rem;}
   .btn {
     display: inline-block;
     font-weight: 400;
