@@ -680,8 +680,8 @@ nav.navbar li {
 .anchor {
   display: block;
   position: relative;
-  top: -46px;
   visibility: hidden;
+  top: 30px;
 }
 .fullnews-img img{
   border-radius: 5px;
