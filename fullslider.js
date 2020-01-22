@@ -53,4 +53,3 @@ document.querySelector('#FullNewsSlider .shadow').onclick = () => {
 	fullslider.classList.remove('active');
 	document.body.classList.remove('overflow-hidden');
 }
-openSlider(0);
